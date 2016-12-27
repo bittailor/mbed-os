@@ -2360,6 +2360,10 @@
         "release_versions": ["2"],
         "device_name": "ATSAMD21G18A"
     },
+    "FEATHER_M0_BASIC_PROTO": {
+      "inherits": ["SAMD21G18A"],
+      "macros_add": ["TARGET_SAMR21G18A"]
+    },
     "SAML21J18A": {
         "inherits": ["Target"],
         "core": "Cortex-M0+",
@@ -2495,7 +2499,7 @@
         "macros_add": ["BOARD_PCA10040", "NRF52_PAN_12", "NRF52_PAN_15", "NRF52_PAN_58", "NRF52_PAN_55", "NRF52_PAN_54", "NRF52_PAN_31", "NRF52_PAN_30", "NRF52_PAN_51", "NRF52_PAN_36", "NRF52_PAN_53", "S132", "CONFIG_GPIO_AS_PINRESET", "BLE_STACK_SUPPORT_REQD", "SWI_DISABLE0", "NRF52_PAN_20", "NRF52_PAN_64", "NRF52_PAN_62", "NRF52_PAN_63"],
         "device_has": ["ANALOGIN", "ERROR_PATTERN", "I2C", "I2C_ASYNCH", "INTERRUPTIN", "LOWPOWERTIMER", "PORTIN", "PORTINOUT", "PORTOUT", "PWMOUT", "RTC", "SERIAL", "SERIAL_ASYNCH", "SERIAL_FC", "SLEEP", "SPI", "SPI_ASYNCH", "SPISLAVE"],
         "release_versions": ["2", "5"],
-        "overrides": {"uart_hwfc": 0},	
+        "overrides": {"uart_hwfc": 0},
         "device_name": "nRF52832_xxAA"
     },
     "UBLOX_EVK_NINA_B1": {
@@ -2610,4 +2614,6 @@
         "inherits": ["SARA_NBIOT"],
         "extra_labels": ["ublox", "HI2110", "SARA_NBIOT"]
     }
+
+
 }
