@@ -118,9 +118,9 @@ struct pwm_pin_channel {
     uint8_t channel_index;
 };
 
-#define STDIO_UART_TX     USBTX
-#define STDIO_UART_RX     USBRX
-#define STDIO_UART        UART_3
+#define STDIO_UART_TX     PA10
+#define STDIO_UART_RX     PA11
+#define STDIO_UART        UART_0
 
 // Default peripherals
 #define MBED_SPI0         PA18, PA16, PA19, PA17
